@@ -62,16 +62,29 @@ body {
     background-color: #fff;
 }
 
+.notes .area ul .checkbox {
+    float: left;
+}
+
+.notes .area ul input:checked + div>li {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
 .notes .area ul div {
     display: flex;
     justify-content: space-between;
-    cursor: pointer;
-    color: red;
 }
 
 .notes .area ul div li {
     font-family: 'Bentham', serif;
     color: #000;
+    margin: 0 0 0 20px;
+}
+
+.notes .area ul div .delete {
+    cursor: pointer;
+    color: red;
 }
 
 .goose img {
@@ -81,4 +94,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 250px;
+}
+
+input:checked {
+    
 }

@@ -8,7 +8,7 @@ btn.addEventListener('click', () => {
     // Знаходимо батьківський елемент
     const findElement = document.getElementById('ul');
     // Додаємо нове li на початок батьківського елемента
-    findElement.insertAdjacentHTML('afterbegin', '<div><li></li><span class="delete">&#xd7;</span></div>');
+    findElement.insertAdjacentHTML('afterbegin', '<input type="checkbox" class="checkbox"></input><div><li></li><span class="delete">&#xd7;</span></div>');
     // Знаходимо нове li
     const writeText = document.querySelector('li');
     // Записуємо введений текст в нове li   
@@ -37,6 +37,7 @@ btn.addEventListener('mouseup', () => {
 });
 
 // Видалення
+
 // const task = document.getElementsByTagName('span');
 
 // let deleteTask = document.createElement('span');
@@ -49,4 +50,7 @@ btn.addEventListener('mouseup', () => {
 //             this.remove();
 //         })
 //     };
+//     let deleteTask = document.createElement('span');
+//     deleteTask.innerHTML = '&times;';
+//     task.append(deleteTask);
 // });
