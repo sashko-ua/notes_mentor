@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    background-color: skyblue;
+    background-image: url(https://img2.abo.media/upload/article/o_1dul4k3gh7ul1t3r129d1i41168b1k.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
     width: 450px;
-    margin: 0 auto;
+    min-height: 70vh;
+    margin: 30px auto;
     padding: 1px 15px 25px;
+    background-color: rgba(255, 255, 255, .8);
 }
 
-.container h1 {
-    text-align: center;
+.container h1, h2 {
+    font-family: 'Bentham', serif;
+    text-align: center;    
 }
 
 .container .wrapper {
@@ -20,19 +27,19 @@ body {
     margin: 0 0 15px;
 }
 .container .wrapper input {
-    border: 1px solid #000;
+    font-family: 'Bentham', serif;
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
-    box-shadow: 0 0 10px #000;
     padding: 5px;
     width: 70%;
+    font-size: 10px;
 }
 
 .container .wrapper button {
     cursor: pointer;
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
-    box-shadow: 0 0 10px #000;
     width: 25%;
 }
 
@@ -41,24 +48,37 @@ body {
     color: #fff;
 }
 
-.container .wrapper h4 {
+.container .wrapper h2 {
     display: none;
+    font-size: 18px;
+    font-weight: 300;
     margin: 0;
 }
 
 .notes .area {
-    padding: 0 25px 0 0;
+    padding: 1px 25px 1px 0;
     width: calc(100% - 26px);
     min-height: 50px;
-    border: 1px solid #000000;
-    background-color: #F5EA54;
+    background-color: #fff;
 }
-.notes .area ul li {
-    float: left;
-}
+
 .notes .area ul div {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     cursor: pointer;
     color: red;
+}
+
+.notes .area ul div li {
+    font-family: 'Bentham', serif;
+    color: #000;
+}
+
+.goose img {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
 }
